@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "zuri-stage-one",
-    "slug": "zuri-stage-one",
+    "name": "zuri",
+    "slug": "zuri",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,10 +21,24 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.oneboyfromife.zuri"
     },
+    "scheme": "myapp",
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "983794af-a098-4432-aebc-f1a3546cd466"
+      }
     }
   }
 }
